@@ -1,0 +1,11 @@
+<%= form_for(@search, remote: true) do |f| %>
+	<%= f.label :state %>
+	<br>
+	<%= f.text_field :state %>
+	<br>
+	<%= f.label :city %>
+	<br>
+	<%= f.text_field :city %>
+	<br>
+	<%= f.submit %>
+<% end %>

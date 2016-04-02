@@ -1,0 +1,9 @@
+<h1>WeatherApp</h1>
+<%= link_to "New search", new_search_path, id: "new_search", remote: true %>
+<br>
+<div id = "showweather">
+	<% @searches.each do |search| %>
+		<%= render search %>
+	<% end %>
+</div>
+
