@@ -1,3 +1,15 @@
+
 <%= div_for search do %>
-	<%= search.city %>, <%= search.state %>- <%= link_to "delete", search, method: :delete, remote: true %>
+<div class = "col-lg-6" style = "margin:1rem 0 1rem 0;height:300px;border-radius:1rem;">
+	<div style = "background-color:#263238;height:300px;width:66%;float:left">
+	</div>
+	<div style = "height:300px;width:33%;float:left">
+		<div style = "background-color:#CFD8DC;height:200px;width:100%">
+		</div>
+		<div style = "background-color:#2196F3;height:100px;width:100%">
+			<%= search.city %>, <%= search.state %>- <%= link_to "delete", search, method: :delete, remote: true %>
+		</div>
+	</div>
+	
+</div>
 <% end %>
