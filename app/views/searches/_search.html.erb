@@ -1,13 +1,16 @@
 
 <%= div_for search do %>
 <div class = "col-lg-6" style = "margin:1rem 0 1rem 0;height:300px;border-radius:1rem;">
-	<div style = "background-color:#263238;height:300px;width:66%;float:left">
+	<div class = "temperature" style = "background-color:#263238;height:300px;width:66%;float:left;color:white;text-align:center;font-size:8rem;padding:5rem 0 0 0">
+		<div style = "font-size:1.5rem;"><%= search.city %>, <%= search.state %></div>
 	</div>
 	<div style = "height:300px;width:33%;float:left">
 		<div style = "background-color:#CFD8DC;height:200px;width:100%">
+			<span style = "float:right"><%= link_to "X", search, method: :delete, remote: true , style: "color:white" , class: "btn btn-danger" %></span>
 		</div>
 		<div style = "background-color:#2196F3;height:100px;width:100%">
-			<%= search.city %>, <%= search.state %>- <%= link_to "delete", search, method: :delete, remote: true %>
+			
+
 		</div>
 	</div>
 	
