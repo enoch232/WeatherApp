@@ -7,4 +7,4 @@ automatically pull weather information from Yahoo Weather, and display
 it using AJAX.
 All the searched results will be stored into the database to pull back
 the new results for the current time.
-<tt>rake doc:app</tt>.
+
