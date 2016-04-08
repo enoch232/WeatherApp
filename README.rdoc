@@ -1,28 +1,10 @@
 == README
+WeatherApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
+If you need to be updated with weather information in certain places,
+you can use this application to add city, and state which will 
+automatically pull weather information from Yahoo Weather, and display
+it using AJAX.
+All the searched results will be stored into the database to pull back
+the new results for the current time.
 <tt>rake doc:app</tt>.
