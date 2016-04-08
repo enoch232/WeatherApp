@@ -1,7 +1,10 @@
-<div id = "addform">
+<div id = "addform" class ="" style = "text-align:center;">
+	<div class = "col-xs-2" style = "margin: 0 auto;float:none;">
 	<%= form_for(@search, remote: true) do |f| %>
-		<%= f.label :state %><%= f.text_field :state %>
-		<%= f.label :city %><%= f.text_field :city %>
+		<%= f.label :state %><%= f.text_field :state, class: "form-control"%>
+		<%= f.label :city %><%= f.text_field :city, class: "form-control"%>
+		<br>
 		<%= f.submit "Search", class: "btn btn-default" %>
 	<% end %>
+	</div>
 </div>
