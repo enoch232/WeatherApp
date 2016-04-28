@@ -15,7 +15,7 @@ $.getJSON('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weath
 		//
 		case '6':
 		case '10':
-			$("#<%= dom_id(@search) %> .weatherimage").append('<%= image_tag "rainy.png" , style: "margin:0 4rem" %>');
+			$("#<%= dom_id(@search) %> .weatherimage").append('<%= image_tag "rainy.png" , class: "weather-img" %>');
 			break;
 	//	case 8:
 	//	case 9:
@@ -32,7 +32,7 @@ $.getJSON('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weath
 		case '41':
 		case '42':
 		case '43':
-			$("#<%= dom_id(@search) %> .weatherimage").append('<%= image_tag "snowy.png" , style: "margin:0 4rem" %>');
+			$("#<%= dom_id(@search) %> .weatherimage").append('<%= image_tag "snowy.png" , class: "weather-img" %>');
 			break;
 	//	case 17:
 	//	case 18:
@@ -48,10 +48,10 @@ $.getJSON('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weath
 		case '28':
 		case '29':
 		case '30':
-			$("#<%= dom_id(@search) %> .weatherimage").append('<%= image_tag "cloudy.png" , style: "margin:0 4rem" %>');
+			$("#<%= dom_id(@search) %> .weatherimage").append('<%= image_tag "cloudy.png" , class: "weather-img" %>');
 			break;
 		case '31':
-			$("#<%= dom_id(@search) %> .weatherimage").append('<%= image_tag "sunny.png" , style: "margin:0 4rem" %>');
+			$("#<%= dom_id(@search) %> .weatherimage").append('<%= image_tag "sunny.png" , class: "weather-img" %>');
 			break;
 	//	case 32:
 	//	case 33:
@@ -68,7 +68,7 @@ $.getJSON('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weath
 	//	case 46:
 	//	case 47:
 		default:
-			$("#<%= dom_id(@search) %> .weatherimage").append('<%= image_tag "sunny.png" , style: "margin:0 4rem" %>');
+			$("#<%= dom_id(@search) %> .weatherimage").append('<%= image_tag "sunny.png" , class: "weather-img" %>');
 			break;
 
 	}

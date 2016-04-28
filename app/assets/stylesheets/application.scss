@@ -31,14 +31,18 @@
     width:34%;
     float:left
   }
+  .weather-img{
+    margin:10%;
+
+  }
 }
-@media (max-width:635px) and (min-width:300px){
+@media (max-width:635px) and (min-width:319px){
   .weather-container{
-    width:45rem;
-    margin:1rem 1rem 1rem 1rem;
+    width:90%;
+    margin:0 auto;
     height:300px;
     border-radius:1rem 1rem 1rem 1rem;
-    float:left;
+    
     box-shadow: 0.7em 0.7em 0.7em darkgrey;
   }
   .temperature{
@@ -57,6 +61,18 @@
     width:45%;
     float:left
   }
+  .weather-img{
+    height:100px;
+    margin:15%;
+
+  }
+}
+
+
+
+.weatherimage{
+  height:90%;
+  width:100%;
 }
 
 
