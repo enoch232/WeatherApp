@@ -1,8 +1,14 @@
 <div id = "addform" class ="" style = "text-align:center;">
-	<div class = "col-xs-2" style = "margin: 0 auto;float:none;">
+	<div style = "margin: 0 auto;float:none;">
 	<%= form_for(@search, remote: true) do |f| %>
-		<%= f.label :state, class: "input" %><%= f.text_field :state, class: "form-control"%>
-		<%= f.label :city, class: "input" %><%= f.text_field :city, class: "form-control"%>
+		<%= f.label :state, class: "input" %>
+		<div style = "width:20rem;margin: 0 auto;">
+		<%= f.text_field :state, class: "form-control"%>
+		</div>
+		<%= f.label :city, class: "input" %>
+		<div style = "width:20rem;margin: 0 auto;">
+		<%= f.text_field :city, class: "form-control"%>
+		</div>
 		<br>
 		<%= f.submit "Search", class: "btn btn-default new-search" %>
 	<% end %>
